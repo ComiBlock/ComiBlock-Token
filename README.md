@@ -1,2 +1,2 @@
-# Altra token
-Altra open source smart contract
+# ComiBlock token
+ComiBlock open source smart contract
