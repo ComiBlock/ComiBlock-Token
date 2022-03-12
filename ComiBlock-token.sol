@@ -7,7 +7,7 @@ pragma solidity ^0.4.16;
 pragma solidity ^0.4.20;
 
 /*
- * EIP-20 Standard Token Smart Contract Interface.
+ * EIP-1559 Standard Token Smart Contract.
  * Copyright © 2021–2022 by by ComiBlock Global.
  * Author: Jerrie <jerrie@comiblock.com>
  */
@@ -15,7 +15,7 @@ pragma solidity ^0.4.20;
 
 /**
  * ERC-20 standard token interface, as defined
- * <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md">here</a>.
+ * <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/EIP-1559.md">here</a>.
  */
 contract Token {
   /**
