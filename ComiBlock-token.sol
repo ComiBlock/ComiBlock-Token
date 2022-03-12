@@ -103,8 +103,8 @@ contract Token {
     address indexed _owner, address indexed _spender, uint256 _value);
 }
 /*
- * Safe Math Smart Contract.  Copyright © 2016–2017 by ABDK Consulting.
- * Author: Mikhail Vladimirov <mikhail.vladimirov@gmail.com>
+ * Safe Math Smart Contract.  Copyright © 2021–2022 by by ComiBlock Global.
+ * Author: Jerrie <jerrie@comiblock.com>>
  */
 pragma solidity ^0.4.20;
 
@@ -276,9 +276,9 @@ contract AbstractToken is Token, SafeMath {
 
 
 /**
- * Celsius Network token smart contract.
+ * ComiBlock token smart contract.
  */
-contract CelsiusToken is AbstractToken {
+contract ComiBlockToken is AbstractToken {
   /**
    * Address of the owner of this smart contract.
    */
@@ -295,13 +295,13 @@ contract CelsiusToken is AbstractToken {
   bool frozen = false;
 
   /**
-   * Create new Celsius Network token smart contract, with given number of tokens issued
+   * Create new ComiBlock Token smart contract, with given number of tokens issued
    * and given to msg.sender, and make msg.sender the owner of this smart
    * contract.
    *
    * @param _tokenCount number of tokens to issue and give to msg.sender
    */
-  function CelsiusToken (uint256 _tokenCount) public {
+  function ComiBlockToken (uint256 _tokenCount) public {
     owner = msg.sender;
     tokenCount = _tokenCount;
     accounts [msg.sender] = _tokenCount;
@@ -322,7 +322,7 @@ contract CelsiusToken is AbstractToken {
    * @return name of this token
    */
   function name () public pure returns (string result) {
-    return "Celsius";
+    return "ComiBlock";
   }
 
   /**
@@ -331,7 +331,7 @@ contract CelsiusToken is AbstractToken {
    * @return symbol of this token
    */
   function symbol () public pure returns (string result) {
-    return "CEL";
+    return "BLK";
   }
 
   /**
